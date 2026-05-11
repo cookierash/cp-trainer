@@ -20,10 +20,10 @@ function getApiBase() {
 
   if (typeof window !== "undefined") {
     const host = window.location.hostname === "localhost" ? "127.0.0.1" : window.location.hostname;
-    return `${window.location.protocol}//${host}:5000`;
+    return `${window.location.protocol}//${host}:5001`;
   }
 
-  return "http://127.0.0.1:5000";
+  return "http://127.0.0.1:5001";
 }
 
 async function readJson<T>(response: Response): Promise<T> {
